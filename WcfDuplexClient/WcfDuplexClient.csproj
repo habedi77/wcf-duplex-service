@@ -49,11 +49,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CallbackHandler.cs" />
-    <Compile Include="Connected Services\CalculatorDuplexService\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
     <Compile Include="Connected Services\ChatDuplexService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -80,14 +75,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Connected Services\CalculatorDuplexService\CalculatorService.wsdl" />
-    <None Include="Connected Services\CalculatorDuplexService\CalculatorService.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\CalculatorDuplexService\CalculatorService1.wsdl" />
-    <None Include="Connected Services\CalculatorDuplexService\CalculatorService1.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Connected Services\ChatDuplexService\ChatDuplexService.wsdl" />
     <None Include="Connected Services\ChatDuplexService\ChatDuplexService.xsd">
       <SubType>Designer</SubType>
@@ -115,23 +102,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\CalculatorDuplexService\" />
     <WCFMetadataStorage Include="Connected Services\ChatDuplexService\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\CalculatorDuplexService\CalculatorService.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\CalculatorDuplexService\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\CalculatorDuplexService\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\CalculatorDuplexService\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\ChatDuplexService\ChatDuplexService.disco" />

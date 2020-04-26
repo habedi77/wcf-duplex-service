@@ -62,7 +62,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Chat\ChatDuplexService.svc" />
-    <Content Include="Duplex\CalculatorService.svc" />
     <Content Include="Service1.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -72,11 +71,6 @@
     </Compile>
     <Compile Include="Chat\IChatDuplex.cs" />
     <Compile Include="Chat\MessageDto.cs" />
-    <Compile Include="Duplex\CalculatorService.svc.cs">
-      <DependentUpon>CalculatorService.svc</DependentUpon>
-    </Compile>
-    <Compile Include="Duplex\ICalculatorDuplex.cs" />
-    <Compile Include="Duplex\ICalculatorService.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
