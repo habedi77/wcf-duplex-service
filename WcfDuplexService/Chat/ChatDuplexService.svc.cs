@@ -23,13 +23,6 @@
 			Callback.SendMessage(message);
 		}
 
-		//public void SendUrgent(MessageDto message)
-		//{
-		//	Thread.Sleep(rand.Next(100, 2000));
-		//	message.SendDateTime = DateTime.Now;
-		//	message.Message = "ECHO: " + message.Message;
-		//}
-
 		IChatDuplex Callback
 		{
 			get
