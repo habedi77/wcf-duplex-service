@@ -3,20 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WcfDuplexClient.CalculatorDuplexService;
+using WcfDuplexClient.ChatDuplexService;
 
 namespace WcfDuplexClient
 {
-    public class CallbackHandler : ICalculatorDuplexCallback
+    public class CallbackHandler : IChatDuplexCallback
     {
-        public void Equals(double result)
+        public void SendMessage(MessageDto message)
         {
-            Console.WriteLine("Equals({0})", result);
-        }
-
-        public void Equation(string eqn)
-        {
-            Console.WriteLine("Equation({0})", eqn);
+            //print to text box
         }
     }
 }

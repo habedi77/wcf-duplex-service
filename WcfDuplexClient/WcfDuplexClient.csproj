@@ -54,7 +54,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Connected Services\ServiceReference1\Reference.cs">
+    <Compile Include="Connected Services\ChatDuplexService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -87,14 +87,14 @@
     <None Include="Connected Services\CalculatorDuplexService\CalculatorService1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceReference1\ChatDuplexService.wsdl" />
-    <None Include="Connected Services\ServiceReference1\ChatDuplexService.xsd">
+    <None Include="Connected Services\ChatDuplexService\ChatDuplexService.wsdl" />
+    <None Include="Connected Services\ChatDuplexService\ChatDuplexService.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceReference1\ChatDuplexService1.xsd">
+    <None Include="Connected Services\ChatDuplexService\ChatDuplexService1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceReference1\ChatDuplexService2.xsd">
+    <None Include="Connected Services\ChatDuplexService\ChatDuplexService2.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\Settings.settings">
@@ -115,7 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\CalculatorDuplexService\" />
-    <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
+    <WCFMetadataStorage Include="Connected Services\ChatDuplexService\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\CalculatorDuplexService\CalculatorService.disco" />
@@ -133,16 +133,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServiceReference1\ChatDuplexService.disco" />
+    <None Include="Connected Services\ChatDuplexService\ChatDuplexService.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Connected Services\ChatDuplexService\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
+    <None Include="Connected Services\ChatDuplexService\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServiceReference1\Reference.svcmap">
+    <None Include="Connected Services\ChatDuplexService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

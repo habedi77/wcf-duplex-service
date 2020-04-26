@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="zIisnOxzxXJay1hj71EbKXGDtX3N4SQZYD/vTfLahso=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="zc7+OFWpH1r/N/2YKPnhq8YmkUMGGcHNZS+rogBq5zE=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="wsDualHttpBinding" name="WSDualHttpBinding_IChatDuplex">
       <properties>
@@ -97,7 +97,7 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="WSDualHttpBinding_IChatDuplex" contract="ServiceReference1.IChatDuplex" bindingType="wsDualHttpBinding" address="http://localhost:3403/Chat/ChatDuplexService.svc" bindingConfiguration="WSDualHttpBinding_IChatDuplex">
+    <endpoint name="WSDualHttpBinding_IChatDuplex" contract="ChatDuplexService.IChatDuplex" bindingType="wsDualHttpBinding" address="http://localhost:3403/Chat/ChatDuplexService.svc" bindingConfiguration="WSDualHttpBinding_IChatDuplex">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>http://localhost:3403/Chat/ChatDuplexService.svc</serializedValue>
@@ -112,7 +112,7 @@
           <serializedValue>WSDualHttpBinding_IChatDuplex</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>ServiceReference1.IChatDuplex</serializedValue>
+          <serializedValue>ChatDuplexService.IChatDuplex</serializedValue>
         </property>
         <property path="/headers" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.AddressHeaderCollectionElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.AddressHeaderCollectionElement</serializedValue>

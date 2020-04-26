@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WcfDuplexClient.ServiceReference1 {
+namespace WcfDuplexClient.ChatDuplexService {
     using System.Runtime.Serialization;
     using System;
     
@@ -75,30 +75,30 @@ namespace WcfDuplexClient.ServiceReference1 {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IChatDuplex", CallbackContract=typeof(WcfDuplexClient.ServiceReference1.IChatDuplexCallback), SessionMode=System.ServiceModel.SessionMode.Required)]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ChatDuplexService.IChatDuplex", CallbackContract=typeof(WcfDuplexClient.ChatDuplexService.IChatDuplexCallback), SessionMode=System.ServiceModel.SessionMode.Required)]
     public interface IChatDuplex {
         
         [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IChatDuplex/SendMessage")]
-        void SendMessage(WcfDuplexClient.ServiceReference1.MessageDto message);
+        void SendMessage(WcfDuplexClient.ChatDuplexService.MessageDto message);
         
         [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IChatDuplex/SendMessage")]
-        System.Threading.Tasks.Task SendMessageAsync(WcfDuplexClient.ServiceReference1.MessageDto message);
+        System.Threading.Tasks.Task SendMessageAsync(WcfDuplexClient.ChatDuplexService.MessageDto message);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface IChatDuplexCallback {
         
         [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IChatDuplex/SendMessage")]
-        void SendMessage(WcfDuplexClient.ServiceReference1.MessageDto message);
+        void SendMessage(WcfDuplexClient.ChatDuplexService.MessageDto message);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IChatDuplexChannel : WcfDuplexClient.ServiceReference1.IChatDuplex, System.ServiceModel.IClientChannel {
+    public interface IChatDuplexChannel : WcfDuplexClient.ChatDuplexService.IChatDuplex, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ChatDuplexClient : System.ServiceModel.DuplexClientBase<WcfDuplexClient.ServiceReference1.IChatDuplex>, WcfDuplexClient.ServiceReference1.IChatDuplex {
+    public partial class ChatDuplexClient : System.ServiceModel.DuplexClientBase<WcfDuplexClient.ChatDuplexService.IChatDuplex>, WcfDuplexClient.ChatDuplexService.IChatDuplex {
         
         public ChatDuplexClient(System.ServiceModel.InstanceContext callbackInstance) : 
                 base(callbackInstance) {
@@ -120,11 +120,11 @@ namespace WcfDuplexClient.ServiceReference1 {
                 base(callbackInstance, binding, remoteAddress) {
         }
         
-        public void SendMessage(WcfDuplexClient.ServiceReference1.MessageDto message) {
+        public void SendMessage(WcfDuplexClient.ChatDuplexService.MessageDto message) {
             base.Channel.SendMessage(message);
         }
         
-        public System.Threading.Tasks.Task SendMessageAsync(WcfDuplexClient.ServiceReference1.MessageDto message) {
+        public System.Threading.Tasks.Task SendMessageAsync(WcfDuplexClient.ChatDuplexService.MessageDto message) {
             return base.Channel.SendMessageAsync(message);
         }
     }
