@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfDuplexService", "WcfDuplexService\WcfDuplexService.csproj", "{3A85143B-3FE7-4C96-861F-4B4681A34E40}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfDuplexClient", "WcfDuplexClient\WcfDuplexClient.csproj", "{DE3257C0-5216-443A-93CD-B51474A4937D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3A85143B-3FE7-4C96-861F-4B4681A34E40} = {3A85143B-3FE7-4C96-861F-4B4681A34E40}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
