@@ -39,18 +39,18 @@
 			// 
 			// buttonStart
 			// 
-			this.buttonStart.Location = new System.Drawing.Point(668, 252);
+			this.buttonStart.Location = new System.Drawing.Point(438, 243);
 			this.buttonStart.Name = "buttonStart";
 			this.buttonStart.Size = new System.Drawing.Size(75, 23);
 			this.buttonStart.TabIndex = 0;
-			this.buttonStart.Text = "Start";
+			this.buttonStart.Text = "Connect";
 			this.buttonStart.UseVisualStyleBackColor = true;
 			this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
 			// 
 			// buttonSend
 			// 
 			this.buttonSend.Enabled = false;
-			this.buttonSend.Location = new System.Drawing.Point(460, 254);
+			this.buttonSend.Location = new System.Drawing.Point(460, 197);
 			this.buttonSend.Name = "buttonSend";
 			this.buttonSend.Size = new System.Drawing.Size(53, 23);
 			this.buttonSend.TabIndex = 1;
@@ -60,7 +60,7 @@
 			// 
 			// textBoxIn
 			// 
-			this.textBoxIn.Location = new System.Drawing.Point(25, 104);
+			this.textBoxIn.Location = new System.Drawing.Point(25, 47);
 			this.textBoxIn.Multiline = true;
 			this.textBoxIn.Name = "textBoxIn";
 			this.textBoxIn.ReadOnly = true;
@@ -70,7 +70,7 @@
 			// 
 			// textBoxOut
 			// 
-			this.textBoxOut.Location = new System.Drawing.Point(278, 104);
+			this.textBoxOut.Location = new System.Drawing.Point(278, 47);
 			this.textBoxOut.Multiline = true;
 			this.textBoxOut.Name = "textBoxOut";
 			this.textBoxOut.ReadOnly = true;
@@ -80,7 +80,7 @@
 			// 
 			// textBoxMessage
 			// 
-			this.textBoxMessage.Location = new System.Drawing.Point(278, 254);
+			this.textBoxMessage.Location = new System.Drawing.Point(278, 197);
 			this.textBoxMessage.Name = "textBoxMessage";
 			this.textBoxMessage.Size = new System.Drawing.Size(176, 20);
 			this.textBoxMessage.TabIndex = 4;
@@ -88,7 +88,7 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(275, 77);
+			this.label1.Location = new System.Drawing.Point(275, 20);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(50, 13);
 			this.label1.TabIndex = 5;
@@ -97,7 +97,7 @@
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(22, 77);
+			this.label2.Location = new System.Drawing.Point(22, 20);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(50, 13);
 			this.label2.TabIndex = 6;
@@ -107,7 +107,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.ClientSize = new System.Drawing.Size(525, 290);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.textBoxMessage);

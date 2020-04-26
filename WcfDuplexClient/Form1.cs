@@ -40,6 +40,7 @@ namespace WcfDuplexClient
 		{
 			client = new ChatDuplexClient(instanceContext);
 			buttonSend.Enabled = true;
+			buttonStart.Enabled = false;
 		}
 
 		private void buttonSend_Click(object sender, EventArgs e)
@@ -71,6 +72,11 @@ namespace WcfDuplexClient
 				Console.Error.WriteLine("Unkonw Error: " + ex.Message);
 				Console.Error.WriteLine(ex.StackTrace);
 				client.Abort();
+			}
+			finally
+			{
+				buttonSend.Enabled = false;
+				buttonStart.Enabled = true;
 			}
 		}
 	}
