@@ -13,7 +13,7 @@ namespace WcfDuplexService.Chat
 		[OperationContract(IsOneWay = true)]
 		void SendMessage(MessageDto message);
 
-		[OperationContract(IsOneWay = true)]
-		void SendUrgent(MessageDto message);
+		//[OperationContract(IsOneWay = true)]
+		//void SendUrgent(MessageDto message);
 	}
 }

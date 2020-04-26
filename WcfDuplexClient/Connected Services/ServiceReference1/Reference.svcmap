@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d735e1e2-c7d4-4ae2-b6ec-c5249f793dcb" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:3403/Chat/ChatDuplexService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ChatDuplexService.xsd" MetadataType="Schema" ID="1b3151f8-7963-476f-88cf-d5f8b6439334" SourceId="1" SourceUrl="http://localhost:3403/Chat/ChatDuplexService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ChatDuplexService.wsdl" MetadataType="Wsdl" ID="885be8af-3921-4041-b568-4355a95b8dae" SourceId="1" SourceUrl="http://localhost:3403/Chat/ChatDuplexService.svc?wsdl" />
+    <MetadataFile FileName="ChatDuplexService.disco" MetadataType="Disco" ID="f71790f5-df84-4a86-b836-1273ab6576e0" SourceId="1" SourceUrl="http://localhost:3403/Chat/ChatDuplexService.svc?disco" />
+    <MetadataFile FileName="ChatDuplexService1.xsd" MetadataType="Schema" ID="36b3f657-3e31-4ff4-8bdd-c84a8276cbcc" SourceId="1" SourceUrl="http://localhost:3403/Chat/ChatDuplexService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ChatDuplexService2.xsd" MetadataType="Schema" ID="4be7237d-9c1c-4e66-a622-3aa2c6025e50" SourceId="1" SourceUrl="http://localhost:3403/Chat/ChatDuplexService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

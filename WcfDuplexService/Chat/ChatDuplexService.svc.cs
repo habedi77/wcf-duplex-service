@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.Threading;
 
 namespace WcfDuplexService.Chat
 {
@@ -12,14 +13,29 @@ namespace WcfDuplexService.Chat
 	[ServiceBehavior(InstanceContextMode = InstanceContextMode.PerSession)]
 	public class ChatDuplexService : IChatDuplex
 	{
+		private Random rand = new Random(DateTime.Now.Millisecond);
+
 		public void SendMessage(MessageDto message)
 		{
-			throw new NotImplementedException();
+			Thread.Sleep(rand.Next(100, 2000));
+			message.SendDateTime = DateTime.Now;
+			message.Message = "ECHO: " + message.Message;
+			Callback.SendMessage(message);
 		}
 
-		public void SendUrgent(MessageDto message)
+		//public void SendUrgent(MessageDto message)
+		//{
+		//	Thread.Sleep(rand.Next(100, 2000));
+		//	message.SendDateTime = DateTime.Now;
+		//	message.Message = "ECHO: " + message.Message;
+		//}
+
+		IChatDuplex Callback
 		{
-			throw new NotImplementedException();
+			get
+			{
+				return OperationContext.Current.GetCallbackChannel<IChatDuplex>();
+			}
 		}
 	}
 }
