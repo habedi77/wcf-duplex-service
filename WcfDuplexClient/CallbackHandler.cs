@@ -12,7 +12,7 @@ namespace WcfDuplexClient
         public void SendMessage(MessageDto message)
         {
             Console.WriteLine(
-                message.SendDateTime.ToShortTimeString() + " |" +
+                message.SendDateTime.ToShortTimeString() + " | " +
                 message.Message);
         }
     }

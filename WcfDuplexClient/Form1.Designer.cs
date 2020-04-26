@@ -49,6 +49,7 @@
 			// 
 			// buttonSend
 			// 
+			this.buttonSend.Enabled = false;
 			this.buttonSend.Location = new System.Drawing.Point(460, 254);
 			this.buttonSend.Name = "buttonSend";
 			this.buttonSend.Size = new System.Drawing.Size(53, 23);

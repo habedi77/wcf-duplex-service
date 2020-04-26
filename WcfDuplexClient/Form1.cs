@@ -39,6 +39,7 @@ namespace WcfDuplexClient
 		private void buttonStart_Click(object sender, EventArgs e)
 		{
 			client = new ChatDuplexClient(instanceContext);
+			buttonSend.Enabled = true;
 			//try
 			//{
 			//    // Call the AddTo service operation.
@@ -94,7 +95,7 @@ namespace WcfDuplexClient
 				};
 				textBoxMessage.Text = string.Empty;
 				client.SendMessage(msg);
-				outGoingWriter.WriteLine(msg.SendDateTime.ToShortTimeString() + " |" +
+				outGoingWriter.WriteLine(msg.SendDateTime.ToShortTimeString() + " | " +
 					msg.Message);
 			}
 			catch (TimeoutException timeProblem)
