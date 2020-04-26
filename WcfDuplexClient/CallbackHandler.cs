@@ -11,7 +11,9 @@ namespace WcfDuplexClient
     {
         public void SendMessage(MessageDto message)
         {
-            //print to text box
+            Console.WriteLine(
+                message.SendDateTime.ToShortTimeString() + " |" +
+                message.Message);
         }
     }
 }
