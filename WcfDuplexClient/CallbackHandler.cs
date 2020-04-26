@@ -1,19 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using WcfDuplexClient.ChatDuplexService;
-
-namespace WcfDuplexClient
+﻿namespace WcfDuplexClient
 {
-    public class CallbackHandler : IChatDuplexCallback
-    {
-        public void SendMessage(MessageDto message)
-        {
-            Console.WriteLine(
-                message.SendDateTime.ToString("HH:mm:ss") + " | " +
-                message.Message);
-        }
-    }
+	using System;
+
+	using WcfDuplexClient.ChatDuplexService;
+
+	public class CallbackHandler : IChatDuplexCallback
+	{
+		public void SendMessage(MessageDto message)
+		{
+			Console.WriteLine(
+				message.SendDateTime.ToString("HH:mm:ss") + " | " +
+				message.Message);
+		}
+	}
 }

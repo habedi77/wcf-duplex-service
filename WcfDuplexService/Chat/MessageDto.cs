@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.Web;
-
-namespace WcfDuplexService.Chat
+﻿namespace WcfDuplexService.Chat
 {
+	using System;
+	using System.Runtime.Serialization;
+
 	[DataContract]
 	public class MessageDto
 	{

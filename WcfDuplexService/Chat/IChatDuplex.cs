@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.ServiceModel;
-using System.Web;
-
-
-namespace WcfDuplexService.Chat
+﻿namespace WcfDuplexService.Chat
 {
+	using System.ServiceModel;
+
 	[ServiceContract(CallbackContract = typeof(IChatDuplex), SessionMode = SessionMode.Required)]
 	public interface IChatDuplex
 	{
