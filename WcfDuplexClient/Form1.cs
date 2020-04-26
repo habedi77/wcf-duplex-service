@@ -47,20 +47,21 @@
 			{
 				Console.Error.WriteLine("The service operation timed out. " + timeProblem.Message);
 				client.Abort();
+				buttonSend.Enabled = false;
+				buttonStart.Enabled = true;
 			}
 			catch (CommunicationException commProblem)
 			{
 				Console.Error.WriteLine("There was a communication problem. " + commProblem.Message);
 				client.Abort();
+				buttonSend.Enabled = false;
+				buttonStart.Enabled = true;
 			}
 			catch (Exception ex)
 			{
 				Console.Error.WriteLine("Unkonw Error: " + ex.Message);
 				Console.Error.WriteLine(ex.StackTrace);
 				client.Abort();
-			}
-			finally
-			{
 				buttonSend.Enabled = false;
 				buttonStart.Enabled = true;
 			}
