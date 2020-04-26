@@ -17,6 +17,10 @@ namespace WcfDuplexService.Chat
 
 		public void SendMessage(MessageDto message)
 		{
+			if(rand.Next(0,10)>6)
+			{
+				return;
+			}
 			Thread.Sleep(rand.Next(100, 2000));
 			message.SendDateTime = DateTime.Now;
 			message.Message = "ECHO: " + message.Message;
