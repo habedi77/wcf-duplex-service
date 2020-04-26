@@ -18,6 +18,8 @@ namespace WcfDuplexClient
 
         private InstanceContext instanceContext;
         private ChatDuplexClient client;
+        private ControlWriter outGoingWriter;
+        private ControlWriter incomingWriter;
 		public Form1()
 		{
 			InitializeComponent();
@@ -28,6 +30,10 @@ namespace WcfDuplexClient
             // Create a client
             //client = new CalculatorDuplexClient(instanceContext);
             client = new ChatDuplexClient(instanceContext);
+
+            outGoingWriter = new ControlWriter(textBoxOut);
+            incomingWriter = new ControlWriter(textBoxIn);
+            Console.SetOut(incomingWriter);
 		}
 
 		private void buttonStart_Click(object sender, EventArgs e)
