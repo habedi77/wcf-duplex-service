@@ -10,25 +10,25 @@ namespace WcfDuplexClient
 {
     public class ControlWriter : TextWriter
     {
-        private Control textbox;
-        public ControlWriter(Control textbox)
+        private TextBoxBase textbox;
+        public ControlWriter(TextBoxBase textbox)
         {
             this.textbox = textbox;
         }
 
         public override void Write(char value)
         {
-            textbox.Text += value;
+            textbox.AppendText(value.ToString());
         }
 
         public override void Write(string value)
         {
-            textbox.Text += value;
+            textbox.AppendText(value);
         }
 
         public override Encoding Encoding
         {
-            get { return Encoding.ASCII; }
+            get { return Encoding.UTF8; }
         }
     }
 }
