@@ -13,11 +13,11 @@
 
 		public void SendMessage(MessageDto message)
 		{
-			if (rand.Next(0, 10) > 6)
+			if (rand.Next(0, 10) >= 5)
 			{
 				return;
 			}
-			Thread.Sleep(rand.Next(100, 2000));
+			Thread.Sleep(rand.Next(500, 2000));
 			message.SendDateTime = DateTime.Now;
 			message.Message = "ECHO: " + message.Message;
 			Callback.SendMessage(message);
