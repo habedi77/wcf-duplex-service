@@ -95,7 +95,7 @@ namespace WcfDuplexClient
 				};
 				textBoxMessage.Text = string.Empty;
 				client.SendMessage(msg);
-				outGoingWriter.WriteLine(msg.SendDateTime.ToShortTimeString() + " | " +
+				outGoingWriter.WriteLine(msg.SendDateTime.ToString("HH:mm:ss")+ " | " +
 					msg.Message);
 			}
 			catch (TimeoutException timeProblem)
